@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Aceituno</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #9d50bb;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #6e48aa;
+            border-bottom: 2px solid #6e48aa;
+            padding-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .gallery img, .gallery video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.03);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #9d50bb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid #6e48aa;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 18px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mi Historia</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+      
+            <h2>¿Quién soy?</h2>
+            <div style="display: flex; align-items: center; gap: 2rem; margin-top: 1.5rem;">
+                <img src="mifoto.jpg" alt="Mi foto" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid #6e48aa;">
+                <div>
+                    <p>Mi nombre es Heather Yojary Aceituno Martin, actualmente cuento con 20 años de edad y desde mis primeros años, mi historia ha estado marcada por la curiosidad y el compromiso con el aprendizaje. Crecí en un entorno que valoraba la dedicación, el respeto y la búsqueda constante de conocimiento. A lo largo de mi vida, he explorado diversas áreas que han moldeado mi identidad, desde experiencias familiares y personales hasta mi desarrollo académico y profesional. Esta autobiografía refleja los momentos, valores y aspiraciones que han definido quién soy y hacia dónde quiero dirigir mi futuro.</p>
+                </div>
+            </div>
+       
+            <h2>Mi Infancia</h2>
+            <p>Mi infancia estuvo marcada por la curiosidad y la exploración, siempre en busca de nuevas experiencias que despertaran mi imaginación. Desde pequeña, disfrutaba Irme, sumergiéndome en momentos de asombro y descubrimiento. Esa pasión temprana me llevó a desarrollar un profundo interés por lo que es armar un pc oh bien como instalar aplicaciones o como es que funciona, son varias cosas que a mí persona le gustan también le puedo contar como la estética como es que con una sola tintura nos puede cambiar a las personas, encontrando en cada oportunidad un motivo para aprender y crecer. Mi entusiasmo por el mundo que me rodeaba se reflejaba en la manera en que observaba los detalles y me planteaba preguntas sobre todo lo que veía.
+
+            Entre los recuerdos más entrañables de mi infancia, destacan los momentos en que acompañaba a mi abuelo a trabajar junto a mí hermana y no llevaba a puestos de comida a deleitar esos exquisitos sabores. Esas vivencias, cargadas de emoción y aprendizaje, se convirtieron en pilares fundamentales para mi desarrollo personal. Me enseñaron la importancia de la paciencia, el esfuerzo y la creatividad, valores que aún hoy forman parte de mi carácter. Cada pequeño logro o descubrimiento alimentaba mi deseo de seguir explorando, fortaleciendo mi confianza en mis propias capacidades.
+
+            La influencia de mi entorno también fue clave en mi crecimiento. Las personas con las que compartí esos años, desde familiares hasta amigos, contribuyeron a moldear mi visión del mundo. Sus enseñanzas y consejos me guiaron en distintas situaciones, ayudándome a comprender la importancia de la empatía y el respeto. Los juegos, las conversaciones y las aventuras compartidas crearon lazos que marcaron mi infancia y que continúan siendo significativos de alguna manera en mi vida.
+.</p>
+            
+            <div class="gallery">
+                <img src="fotopiñata.jpg" alt="foto con piñata"width="100px" height="100px">
+                <img src="pequeñas.jpg" alt="hermanas"width="100px" height="100px" >
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        
+                        <p>Nací en Guatemala el 25 de diciembre de 2004, en el seno de una familia que siempre ha valorado el respeto, la educación y el esfuerzo. Desde mis primeros años, me inculcaron la importancia de actuar con integridad y responsabilidad, enseñándome que el conocimiento y la dedicación son pilares fundamentales para el crecimiento personal. En nuestro hogar, el respeto por los demás y el compromiso con cumplir con nuestras responsabilidades han sido principios esenciales que han guiado nuestras acciones y decisiones.  
+
+                        Mi familia ha sido un pilar fundamental en mi desarrollo, no solo brindándome apoyo, sino también transmitiéndome enseñanzas que han moldeado mi carácter. A través de sus historias y experiencias, aprendí a valorar el esfuerzo y la perseverancia como herramientas esenciales para superar desafíos. Cada conversación, cada consejo y cada ejemplo de compromiso con el trabajo y la sociedad han enriquecido mi manera de ver el mundo y han fortalecido mi deseo de contribuir positivamente a mi entorno.  
+</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <p>Mi infancia estuvo marcada por la curiosidad y la exploración, siempre en busca de nuevas experiencias que despertaran mi imaginación. Desde pequeña, disfrutaba Irme, sumergiéndome en momentos de asombro y descubrimiento. Esa pasión temprana me llevó a desarrollar un profundo interés por lo que es armar un pc oh bien como instalar aplicaciones o como es que funciona, son varias cosas que a mí persona le gustan también le puedo contar como la estética como es que con una sola tintura nos puede cambiar a las personas, encontrando en cada oportunidad un motivo para aprender y crecer. Mi entusiasmo por el mundo que me rodeaba se reflejaba en la manera en que observaba los detalles y me planteaba preguntas sobre todo lo que veía.
+
+                        Entre los recuerdos más entrañables de mi infancia, destacan los momentos en que acompañaba a mi abuelo a trabajar junto a mí hermana y no llevaba a puestos de comida a deleitar esos exquisitos sabores. Esas vivencias, cargadas de emoción y aprendizaje, se convirtieron en pilares fundamentales para mi desarrollo personal. Me enseñaron la importancia de la paciencia, el esfuerzo y la creatividad, valores que aún hoy forman parte de mi carácter. Cada pequeño logro o descubrimiento alimentaba mi deseo de seguir explorando, fortaleciendo mi confianza en mis propias capacidades.
+</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <p>La adolescencia fue una etapa de aprendizaje y transformación, en la que cada experiencia me llevó a descubrir y aprender nuevas facetas de mí misma. En esos años, enfrenté retos que me enseñaron a asumir responsabilidades y a tomar decisiones con mayor conciencia sobre su impacto en mi futuro. Aprendí a navegar entre expectativas y descubrimientos, equilibrando las exigencias académicas con la construcción de mi propia identidad. Mis estudios de nivel básico se convirtieron en un espacio clave para ampliar mi visión del mundo, pues allí tuve la oportunidad de conocer diferentes perspectivas y desarrollar habilidades como aprender a ser estilista y poner hacer un mini mantenimiento o ensamblar pc, que me ayudaron a fortalecer mi confianza y autonomía.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="educacion">
+            <h2>Mi Educación</h2>
+            <p>Mi formación académica ha sido clave en mi desarrollo profesional. :</p>
+            
+            
+            <ul style="margin-top: 1.5rem;">
+                <li><strong>2012-2016</strong> Colegio Mixto San Juan Diego </li>
+                <li><strong>2017-2019:</strong> Colegio Mixto San Juan Diego </li>
+                <li><strong>2021-2023</strong> Colegio de Informática Justo Rufino Bautista</li>
+                <li><strong>2025 actualmente</strong> Universidad Mariano Gálvez la carrera de Ingeniería en Sistemas de Información</li>
+            </ul>
+        </section>
+        
+        <section id="logros">
+            <h2>Mis Metas</h2>
+            <p>Siempre me he guiado por objetivos claros, pues considero que establecer metas es fundamental para el crecimiento personal y profesional. </p>
+            
+                
+                <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3 style="color: #6e48aa; margin-top: 0;">Meta a corto plazo</h3>
+                    <p>quiero poder independizar y tener más conocimiento sobre los sistemas informáticos, enfocándome en acciones concretas que me permitan avanzar y consolidar mis habilidades. Este objetivo representa una etapa clave en mi desarrollo, ya que me dará las herramientas necesarias para afrontar mayores desafíos en el futuro.
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3 style="color: #6e48aa; margin-top: 0;">Meta a largo plazo</h3>
+                    <p>A largo plazo, busco un trabajo estable, hacer viajes a diferentes lugares de Guatemala, una meta que refleja mis valores y aspiraciones profundas. No solo se trata de alcanzar un logro específico, sino de construir un camino que me permita crecer y generar un impacto positivo. Sé que este objetivo requiere perseverancia y adaptación ante los cambios, pero también representa una fuente de motivación constante. Cada decisión y cada experiencia que acumulo son parte del proceso que me acerca a este propósito mayor.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="hobbies">
+            <h2>Mis Pasatiempos</h2>
+            <p>En mi tiempo libre, disfruto de actividades como leer, ver animes, hacer quiz e invertir tiempo conmigo misma, ya que me brindan la oportunidad de relajarme y desconectarme del ritmo acelerado de la rutina diaria. Cada una de estas actividades representa un espacio donde puedo explorar nuevas ideas, conocer diferentes perspectivas y recargar energías. Además de ofrecerme momentos de tranquilidad, estos pasatiempos son una fuente constante de inspiración para mis proyectos. </p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3 style="color: #6e48aa; margin-top: 0;">Fotografía</h3>
+                    <p>Me encanta capturar momentos especiales. Aquí algunas de mis fotos favoritas:</p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; margin-top: 1rem;">
+                        <img src="rostromaya.jpg" alt="Foto 1" style="width: 100%; border-radius: 5px;">
+                        <img src="esquipulas.jpg" alt="Foto 2" style="width: 100%; border-radius: 5px;">
+                        
+                    </div>
+                </div>
+                
+                <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3 style="color: #6e48aa; margin-top: 0;">Paisajes</h3>
+                    <p> Aquí un pequeño fragmento de paisajes:</p>
+                   <video controls>
+                    <source src="antiguavid.mp4" type="video/mp4" width="100px" height="100px">
+                </video>
+                    <p style="margin-top: 1rem;">Antigua</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="mis gustos">
+            <h2>Lo que me gusta </h2>
+            <p>Me apasiona poder ayudar a mi familia y amigos en escucharlos, ya que representa una fuente inagotable de inspiración y aprendizaje. Es una actividad que me permite conectar con mis intereses, explorar nuevas ideas y desarrollar habilidades que enriquecen mi visión del mundo. A través de ella, he encontrado una manera de expresarme y de descubrir nuevas perspectivas que fortalecen mi crecimiento personal y profesional. Cada experiencia en este ámbito me ha llevado a profundizar en mi curiosidad y a buscar nuevas formas de mejorar y evolucionar.</p>
+            
+            <div style="margin-top: 1.5rem;">
+                <div style="background-color: #6e48aa; color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3 style="margin-top: 0;">lo que no me gusta</h3>
+                    <p>Trato de evitar aspectos negativos, como la desorganización, la falta de compromiso, ya que considero que estos factores pueden afectar tanto el desarrollo personal como el trabajo en equipo. La desorganización tiende a generar caos y dificulta el cumplimiento de objetivos, mientras que la falta de compromiso puede influir negativamente en la confianza y la eficiencia de cualquier proyecto. Valoro la responsabilidad y el orden como pilares fundamentales para alcanzar resultados positivos y mantener un ambiente armonioso y productivo.
+                    Por esta razón, prefiero rodearme de ambientes que fomenten el crecimiento, el respeto y la innovación. Me motiva estar en espacios donde se valore el esfuerzo, la creatividad y la capacidad de aprender de cada experiencia. La colaboración y el intercambio de ideas enriquecen el proceso de desarrollo personal y profesional, permitiendo que todos los involucrados contribuyan con sus habilidades y conocimientos. Cuando el entorno es estimulante y orientado hacia la mejora constante, se generan oportunidades que inspiran y potencian la evolución individual y colectiva.
+                    Considero que la calidad de las interacciones y del ambiente en el que nos desenvolvemos influye directamente en nuestro bienestar y motivación. Es por ello que me esfuerzo por mantener un entorno positivo, donde se practique el respeto mutuo y el deseo de superación. Al evitar aquellas actitudes y situaciones que limitan el desarrollo, puedo enfocarme mejor en mis objetivos.
+                    </p>
+            
+                <div style="background-color: #6e48aa; color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3 style="margin-top: 0;">a quienes admiro</h3>
+                    <p>Admiro a personas que han logrado generar un impacto positivo en el mundo, aquellas cuyas acciones han dejado huella y han inspirado cambios en mi crecimiento personal. La dedicación y el compromiso que demuestran en sus respectivos campos son un reflejo de su pasión por mejorar el entorno y generar bienestar para los demás. Creo que el verdadero mérito no radica solo en los logros alcanzados, sino en la capacidad de influir de manera positiva, promoviendo valores.
+
+                    Figuras como mí abuela me enseñan que, con esfuerzo y perseverancia, es posible transformar realidades y alcanzar grandes metas. Sus historias representan un ejemplo de determinación y superación, demostrando que los desafíos son oportunidades para crecer y aprender. Cada uno de ellos, con sus ideales y acciones, ha sido una fuente de inspiración para mí, recordándome la importancia de trabajar con propósito y visión a largo plazo. A través de su trayectoria, he comprendido que la verdadera influencia se construye con constancia, resiliencia y un profundo compromiso con el cambio.
+</p>
+                </div>
+                
+            
+            </div>
+        </section>
+    </div>
+</body>
+</html>
