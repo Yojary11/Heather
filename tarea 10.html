@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #4CAF50;">
+            max-width: 1200px;
+        }
+        header {
+            background-color: #f9f9f9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+       
+        h2 {
+            color: #2E7D32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .hobbies {
+            columns: 2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery-item {
+            width: 30%;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #76d8f3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7dc9de;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .color1 {
+            color: #d32f2f;
+        }
+        .color2 {
+            color: #1976d2;
+        }
+        @media (max-width: 600px) {
+            .hobbies {
+                columns: 1;
+            }
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: skyblue;">¡Bienvenido a mi página personal!</span></h1>
+    </header>
+
+    <div class="section">
+        <h2>Sobre mí</h2>
+        <p>Hola, mi nombre es <span class="bold color1">Heather Martin</span> y esta es mi página personal. Aquí comparto información sobre mis intereses, cursos y lugares que me gustaría visitar. Soy estudiante de <span class="italic color2">Ingeniería en Sistemas de Información y Ciencias de la Computació</span></p>
+    </div>
+
+    <div class="section">
+        <h2>Mis Hobbies</h2>
+        <ul class="hobbies">
+            <li>Leer</li>
+            <li>Ver animes</li>
+            <li>Ciclismo</li>
+            <li>Ver peliculas</li>
+            <li>Sacar a correr a mis perror</li>
+            <li>Bicicletear</li>
+            <li>Senderismo</li>
+            <li>Escuchar Música </li>
+            <li>Videojuegos</li>
+            <li>Jardinería</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Cursos del primer semestre</h2>
+        <ol>
+            <li>9390-001 - Desarrollo humano y profesional</li>
+            <li>9390-002 - Metodología de la Investigación</li>
+            <li>9390-003 - Contabilidad I</li>
+            <li>9390-004 - Introducción a los sistemas de cómputo</li>
+            <li>9390-005 - Lógica de sistemas</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Lugares que me gustaría visitar</h2>
+        <div class="gallery-item">
+                <img src="kioto.jpg" alt="kioto" width="100px" height="100px">
+            <div class="gallery-item">
+                <p class="bold">kioto, japon</p>
+            </div>
+            <div class="gallery-item">
+                <img src="semucChampey.jpeg" alt="Semuc champey" width="100px" height="100px">
+                <p class="bold">Semuc champey, Alta Verapaz</p>
+            </div>
+            <div class="gallery-item">
+                <img src="annefrank.jpg" alt="Museo de Ana Frank"width="100px" height="100px">
+                <p class="bold">Museo de Ana Frank, Países Bajos</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Personajes que admiro</h2>
+        <p>Conoce más sobre estas personas que admiro:</p>
+        <ul>
+            <li><a href="https://universal1029.mx/efemerides/nace-saul-hernandez-y-la-leyenda-de-caifanes/" target="Saul Hernández">Saul Hernándes</a>- Vocalista de Caifanes </li>
+            <li><a href="https://www.cartoontoi.es/blogs/blog-manga/eiichiro-oda" target="_blank"> Eiichiro Oda</a> - Mangaka</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Tablas de multiplicar (1 al 9)</h2>
+        <table>
+            <tr>
+                <th>×</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+            <?php for ($i = 1; $i <= 9; $i++): ?>
+            <tr>
+                <th><?= $i ?></th>
+                <?php for ($j = 1; $j <= 9; $j++): ?>
+                <td><?= $i * $j ?></td>
+                <?php endfor; ?>
+            </tr>
+            <?php endfor; ?>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Serie 2<sup>n</sup> (10 ≤ n ≤ 15)</h2>
+        <table>
+            <tr>
+                <th>n</th>
+                <th>2<sup>n</sup></th>
+            </tr>
+            <?php for ($n = 10; $n <= 15; $n++): ?>
+            <tr>
+                <td><?= $n ?></td>
+                <td><?= pow(2, $n) ?></td>
+            </tr>
+            <?php endfor; ?>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Formulario de datos</h2>
+        <form>
+            <label for="carnet">Número de Carné:</label>
+            <input type="text" id="carnet" name="carnet" required>
+            
+            <label for="nombre">Nombre de alumno:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="curso">Nombre de curso:</label>
+            <input type="text" id="curso" name="curso" required>
+            
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" name="nota" min="0" max="100" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
